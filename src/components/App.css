@@ -1,0 +1,139 @@
+.h1{
+  
+  color: #d54d7b; 
+  font-family: "Great Vibes", 
+  cursive; font-size: 125px;
+  line-height: 130px; 
+  font-weight: normal; 
+  margin-bottom: 0px; 
+  margin-top: -10px; 
+  text-align: center; 
+  text-shadow: 0 1px 1px #fff;
+}
+.h2{
+  color: #7a7c7f; 
+  font-size: 29px; 
+  font-family: "Libre Baskerville", 
+  serif; 
+  line-height: 45px; 
+  text-align: left; 
+  text-shadow: 0 1px 1px #fff; 
+  padding-top: 20px; 
+}
+  .chatbox {
+  width: 300px;
+  height: 400px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p{
+  font-style: italic; 
+  color: black; 
+  font-size: 15px; 
+  margin-top: 20px; 
+  text-align: left; 
+  text-shadow: 0 1px 1px #fff;
+}
+.inp{
+  width: 100px;
+  font-size: 10px;
+}
+.upBtn{
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  position: relative;
+  padding: 10px;
+  margin: 0;
+  line-height: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #F08080;
+  border: none;
+  color: #fff;
+  box-shadow: none;
+}
+
+.input{
+  position: absolute; 
+  bottom:   40px;
+
+}
+
+input:focus {
+  border-color: green
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+.myName{
+  position:relative;
+  bottom:30px;
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #2c4bff; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.myName:hover {--_p: 100%}
+
+.a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  background-color: #290b12;
+}
+
+.a span{
+  position: relative;
+  z-index: 2;
+  color:white
+}
+
+.a:after{
+  position: absolute;
+  content: "Sent!";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color:#290b12;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+.a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.a:hover:after{
+  width: 100%;
+  color:white;
+}
